@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body{
+    box-sizing: border-box;
+}
+
 .apresentacao {
     background-image: url(assets/Background.png);
     background-repeat: no-repeat;
@@ -14,27 +18,46 @@
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
+    padding: 5% 0 0 5%;
 }
 
 .apresentação__conteudo__titulo {
     font-size: 48px;
     font-weight: 700;
+    text-align: justify;
+    padding: 0 0 5% 10%;
+    
 }
 
 .apresentação__conteudo {
     display: flex;
     flex-direction: column;
+    width: 1440px;
+    height: 680px;
+    gap: 16px;
 
 }
+
 
 .apresentação__conteudo__links {
     display: flex;
     align-items: flex-start;
+    border: 2px solid #167bf7;
     border-radius: 8px;
-    background-color: #167BF7;
+    background-color: none;
     width: 512px;
     padding: 16px;
-    gap: 16px;
+    gap: 26px;
+    justify-content: center;
+}
+
+#nota_link {
+    color: #c0c0c0;
+    font-size: 12px;
+}
+
+.teste {
+    width: 50%;
 }
 
 .apresentação__conteudo__imagem {
@@ -47,4 +70,5 @@
     width: 348px;
     height: 100px;
     flex-shrink: 0;
+    padding-left: 7%;
 }
