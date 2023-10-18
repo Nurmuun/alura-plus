@@ -14,8 +14,8 @@
 
 body{
     background-color: var(--cor_fundo);
-    box-sizing: border-box;
     color: var(--cor_primaria);
+    font-family: 'Inter', sans-serif;
 }
 
 .principal {
@@ -26,62 +26,48 @@ body{
 
 .container {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.apresentacao { 
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
-    padding: 5% 0 0 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.apresentação__conteudo {
-    display: flex;
-    flex-direction: column;
-    width: 1440px;
-    height: 680px;
-    gap: 16px;
-    inline-size: 588px;
-    text-wrap: break-word;
-    text-align: center;
-    height: 100vh;
-}
-
-.apresentação__conteudo__titulo {
-    font-size: 48px;
-    font-weight: 700;
-    padding: 0 0 5% 10%;
+.container__titulo {
+   text-align: center;
+   font-size: 1.75em;
+   font-weight: 700;
     
     
 }
 
-
-.apresentação__conteudo__links {
+.container__botao {
     border: 2px solid var(--cor_terciaria);
+    background-color: var(--cor_terciaria);
     color: var(--cor_primaria);
     border-radius: 8px;
     width: 512px;
     padding: 1em;
-    gap: 1.625em;
-    justify-content: center;
+    text-align: center;
     text-decoration: none;
+    display: block;
 }
 
-#nota_link {
-    color: #c0c0c0;
-    font-size: 12px;
+.container__botao_secundario {
+    border: 2px solid var(--cor_primaria);
+    background-color: transparent;
+    color: var(--cor_primaria);
+    border-radius: 8px;
+    width: 512px;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* sem isto o botão aparece cortado e tudo em cima umas coisas das outras */
 }
 
-.apresentação__conteudo__imagem {
+.container__last {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+}
+/* .apresentação__conteudo__imagem {
     width: 498px;
     height: 560px;
-    flex-shrink: 0;
-}
+} */
 
-#combo {
-    width: 348px;
-    height: 100px;
-    flex-shrink: 0;
-    padding-left: 7%;
-}
