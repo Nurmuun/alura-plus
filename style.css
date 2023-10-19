@@ -10,12 +10,15 @@
     --cor_secundária: #C0C0C0;
     --cor_terciaria: #167BF7;
     --cor_fundo: #00030C;
+    --fonte_primaria: 'Inter', sans-serif;
 }
 
 body{
     background-color: var(--cor_fundo);
     color: var(--cor_primaria);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte_primaria);
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .principal {
@@ -60,6 +63,11 @@ body{
     text-align: center;
     text-decoration: none;
     display: block; /* sem isto o botão aparece cortado e tudo em cima umas coisas das outras */
+}
+
+.aviso {
+    color: var(--cor_secundária);
+    font-size: 0.75em;
 }
 
 .container__last {
